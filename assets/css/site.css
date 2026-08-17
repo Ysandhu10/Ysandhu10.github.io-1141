@@ -1,34 +1,43 @@
 /* ==========================================================================
    Yashita Sandhu — Social Media Analyst
-   Direction: Soft Structuralism, dark-first. Off-black ground, one locked
-   accent (electric lime), oversized grotesk display, macro whitespace.
-   Coral appears ONLY as a semantic data colour inside charts, never as a
-   second brand accent.
+   Direction: Soft Structuralism on paper. Warm off-white ground, oversized
+   grotesk display, macro whitespace.
+   The accent splits: electric lime is the FILL (buttons, highlights, dark text
+   on top) and a deep olive from the same family carries text and chart strokes,
+   because lime is unreadable as text on a light ground. Rust appears ONLY as a
+   semantic data colour inside charts, never as a second brand accent.
+   Dark is retained behind data-theme="dark" but is not served automatically.
    No build step. Native CSS on GitHub Pages.
    ========================================================================== */
 
 :root {
-  color-scheme: dark light;
+  color-scheme: light;
 
-  /* ---- dark, the default expression ---- */
-  --ground:      #0B0B0C;
-  --raise:       #131315;
-  --shell:       #1A1A1D;
-  --ink:         #F4F4F0;
-  --ink-soft:    #A2A29C;
-  --ink-faint:   #8A8A84;
-  --hair:        rgba(244,244,240,.10);
-  --hair-firm:   rgba(244,244,240,.18);
+  /* ---- light, the committed expression ---- */
+  --ground:      #F7F7F4;
+  --raise:       #FFFFFF;
+  --shell:       #ECECE6;
+  --ink:         #0F0F10;
+  --ink-soft:    #55554F;
+  --ink-faint:   #62625C;
+  --hair:        rgba(15,15,16,.11);
+  --hair-firm:   rgba(15,15,16,.20);
 
-  --accent:      #D6F249;
+  /* The accent splits in two on a light ground. Lime is unusable as text
+     (1.17:1 on paper) but excellent as a FILL with dark text on top (15.6:1),
+     so fills keep the brand colour and text/strokes use a deep olive from the
+     same family (6.5:1 on paper). */
+  --accent:      #46620A;
+  --accent-fill: #D6F249;
   --accent-ink:  #0B0B0C;
-  --accent-dim:  rgba(214,242,73,.14);
+  --accent-dim:  rgba(214,242,73,.55);
 
   /* semantic data only */
-  --dv-neg:      #FF8A6B;
-  --dv-mute:     #6E6E69;
+  --dv-neg:      #B23F17;
+  --dv-mute:     #68685F;
 
-  --lift: 0 1px 0 rgba(244,244,240,.06) inset, 0 24px 60px -20px rgba(0,0,0,.7);
+  --lift: 0 1px 0 rgba(255,255,255,.9) inset, 0 18px 44px -22px rgba(15,15,16,.20);
+  --core-inset: 0 1px 0 rgba(255,255,255,.85) inset;
 
   --f-display: "Bricolage Grotesque", "Geist", system-ui, sans-serif;
   --f-body:    "Geist", system-ui, -apple-system, sans-serif;
@@ -46,42 +55,27 @@
   --t-fast: .35s var(--ease);
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --ground:    #F7F7F4;
-    --raise:     #FFFFFF;
-    --shell:     #EDEDE7;
-    --ink:       #0F0F10;
-    --ink-soft:  #55554F;
-    --ink-faint: #6E6E68;
-    --hair:      rgba(15,15,16,.10);
-    --hair-firm: rgba(15,15,16,.16);
-
-    --accent:     #4D6B00;
-    --accent-ink: #FFFFFF;
-    --accent-dim: rgba(77,107,0,.10);
-
-    --dv-neg:  #C4491F;
-    --dv-mute: #86867F;
-
-    --lift: 0 1px 0 rgba(255,255,255,.9) inset, 0 24px 60px -24px rgba(15,15,16,.18);
-  }
-}
-:root[data-theme="light"] {
-  --ground:    #F7F7F4;
-  --raise:     #FFFFFF;
-  --shell:     #EDEDE7;
-  --ink:       #0F0F10;
-  --ink-soft:  #55554F;
-  --ink-faint: #6E6E68;
-  --hair:      rgba(15,15,16,.10);
-  --hair-firm: rgba(15,15,16,.16);
-  --accent:     #4D6B00;
-  --accent-ink: #FFFFFF;
-  --accent-dim: rgba(77,107,0,.10);
-  --dv-neg:  #C4491F;
-  --dv-mute: #86867F;
-  --lift: 0 1px 0 rgba(255,255,255,.9) inset, 0 24px 60px -24px rgba(15,15,16,.18);
+/* Dark is retained but dormant: explicit opt-in only, so the site does not
+   flip to dark for visitors whose OS is set that way. Add data-theme="dark"
+   on <html> to bring it back. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:      #0B0B0C;
+  --raise:       #131315;
+  --shell:       #1A1A1D;
+  --ink:         #F4F4F0;
+  --ink-soft:    #A2A29C;
+  --ink-faint:   #8A8A84;
+  --hair:        rgba(244,244,240,.10);
+  --hair-firm:   rgba(244,244,240,.18);
+  --accent:      #D6F249;
+  --accent-fill: #D6F249;
+  --accent-ink:  #0B0B0C;
+  --accent-dim:  rgba(214,242,73,.16);
+  --dv-neg:      #FF8A6B;
+  --dv-mute:     #6E6E69;
+  --lift: 0 1px 0 rgba(244,244,240,.06) inset, 0 24px 60px -20px rgba(0,0,0,.7);
+  --core-inset: 0 1px 0 rgba(244,244,240,.06) inset;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -104,7 +98,7 @@ body {
 body::after {
   content: "";
   position: fixed; inset: 0; z-index: 60; pointer-events: none;
-  opacity: .035;
+  opacity: .022;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -141,7 +135,7 @@ a { color: inherit; text-decoration: none; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus {
   left: var(--pad); top: .75rem; z-index: 100;
-  background: var(--accent); color: var(--accent-ink);
+  background: var(--accent-fill); color: var(--accent-ink);
   padding: .6rem 1rem; border-radius: 999px; font-weight: 600;
 }
 
@@ -184,7 +178,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--f-body); font-size: .95rem; font-weight: 600;
   padding: .55rem .55rem .55rem 1.4rem;
   border-radius: 999px; border: 1px solid transparent;
-  background: var(--accent); color: var(--accent-ink);
+  background: var(--accent-fill); color: var(--accent-ink);
   transition: transform var(--t-fast), background var(--t-fast), border-color var(--t-fast);
 }
 .btn .cap {
@@ -213,7 +207,7 @@ a { color: inherit; text-decoration: none; }
 .bezel > .core {
   border-radius: var(--r-core);
   background: var(--raise);
-  box-shadow: 0 1px 0 rgba(244,244,240,.06) inset;
+  box-shadow: var(--core-inset);
   overflow: hidden;
 }
 
@@ -224,7 +218,10 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1.05fr .95fr; align-items: center;
 }
 .hero h1 { margin-bottom: 1.5rem; }
-.hero h1 .lit { color: var(--accent); }
+.hero h1 .lit {
+  color: var(--accent);
+  box-shadow: inset 0 -.16em 0 var(--accent-dim);
+}
 .hero .sub { font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--ink-soft); max-width: 42ch; margin-bottom: 2.25rem; line-height: 1.5; }
 .hero-media { position: relative; }
 .hero-media img { display: block; width: 100%; height: auto; }
