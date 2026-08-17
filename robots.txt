@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://AlexMorgan.com/sitemap.xml
+Sitemap: https://ysandhu10.github.io/Ysandhu10.github.io-1141/sitemap.xml

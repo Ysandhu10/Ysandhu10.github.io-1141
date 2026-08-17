@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Your Engagement Rate Doesn't Match Mine</title>
+<meta name="description" content="2,092 posts across four platforms. One definition of engagement rate, timing advice with a sample-size floor, and format comparisons that measure format instead of platform.">
+<meta name="author" content="Yashita Sandhu">
+<link rel="canonical" href="https://ysandhu10.github.io/Ysandhu10.github.io-1141/work/content-cockpit/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Yashita Sandhu">
+<meta property="og:title" content="Your Engagement Rate Doesn't Match Mine">
+<meta property="og:description" content="2,092 posts across four platforms. One definition of engagement rate, timing advice with a sample-size floor, and format comparisons that measure format instead of platform.">
+<meta property="og:url" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/work/content-cockpit/">
+<meta property="og:image" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/assets/og/content-cockpit.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your Engagement Rate Doesn't Match Mine">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Engagement Rate Doesn't Match Mine">
+<meta name="twitter:description" content="2,092 posts across four platforms. One definition of engagement rate, timing advice with a sample-size floor, and format comparisons that measure format instead of platform.">
+<meta name="twitter:image" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/assets/og/content-cockpit.png">
+
+<meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav-in">
+    <a href="../../" class="nav-brand">Yashita Sandhu</a>
+    <div class="nav-links">
+      <a href="../../#featured" aria-current="page">Work</a>
+      <a href="../../method/">Method</a>
+      <a href="../../about/">About</a>
+      <a href="../../about/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero shell">
+  <div class="col">
+    <h1>Your engagement rate doesn't match mine</h1>
+    <p class="sub" style="max-width:52ch">
+      Two people pull the same month from the same account and get numbers three times apart. Neither
+      has made a mistake. That argument is what a reporting layer exists to end.
+    </p>
+  </div>
+</header>
+
+<div class="shell">
+  <div class="bezel rise case-hero" style="margin-bottom:1rem">
+    <div class="core">
+      <img src="../../assets/img/case-content.webp" width="1600" height="900"
+           alt="A stack of translucent dark planes at different depths, one dramatically larger and edge-lit"
+           fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</div>
+
+<div class="shell">
+  <dl class="glance rise">
+    <div><dt>The question</dt><dd>Which content, on which platform, at which time, and what actually changed this week?</dd></div>
+    <div><dt>Data</dt><dd>2,092 posts across Instagram, LinkedIn, TikTok and X, one year. Synthetic and disclosed.</dd></div>
+    <div><dt>Method</dt><dd>Twelve KPIs defined once, aggregate rates only, day-parts with a 20-post floor, Mann-Whitney U within platform.</dd></div>
+    <div><dt>Outcome</dt><dd>A concentration risk the dashboard was calling a win, and a concrete calendar reallocation.</dd></div>
+  </dl>
+</div>
+
+<div class="shell">
+<article class="prose">
+
+<div class="note warn rise">
+  <h4>On the data</h4>
+  <p>
+    Seeded synthetic data for a fictional direct-to-consumer beverage brand. No employer or client data
+    appears anywhere in this project. The generator is modelled on how social data actually behaves,
+    with heavy-tailed reach, format and day-part effects, a compounding follower base and paid-boost
+    distortion, so the analysis code meets the same shapes it would meet in production.
+  </p>
+</div>
+
+<h2 class="rise">Why it was hard</h2>
+<p class="rise">
+  Most social reporting fails in the same four ways, and all four produce a number that looks perfectly
+  reasonable on a slide.
+</p>
+
+<div class="chunks rise" style="margin:2.5rem 0">
+  <div class="chunk bezel"><div class="core">
+    <h4>Definition failures</h4>
+    <dl>
+      <div><dt>"Your engagement rate doesn't match mine"</dt>
+        <dd>Rate on reach and rate on followers are both correct and roughly three times apart. Both
+        are computed, named separately, and defined once in one module.</dd></div>
+      <div><dt>The headline rate disagrees with itself</dt>
+        <dd>Averaging per-post rates lets a 200-reach post count as much as a 200,000-reach one.
+        Aggregate only: total engagement divided by total reach.</dd></div>
+    </dl>
+  </div></div>
+  <div class="chunk bezel"><div class="core">
+    <h4>Sample-size failures</h4>
+    <dl>
+      <div><dt>"Best time to post: Friday 9pm" from five posts</dt>
+        <dd>Day and hour cells hold two or three posts each, so one viral post crowns an empty slot.
+        Recommendations run on day-parts with a 20-post floor, and thin cells render blank.</dd></div>
+      <div><dt>"Carousels beat Reels" on a difference that is noise</dt>
+        <dd>No significance test, and formats pooled across platforms. Mann-Whitney U with effect size,
+        computed within each platform.</dd></div>
+    </dl>
+  </div></div>
+</div>
+
+<p class="rise">
+  That last one is the subtle one. "Short video gets 2.5 times the reach share" sounds like a format
+  finding, but short video only exists on TikTok, and TikTok engages at 2.4 times X's rate. A pooled
+  format ranking is mostly measuring <em>the platform</em>. Every format comparison here is
+  within-platform for exactly that reason.
+</p>
+
+<div class="pull rise">
+  A metric that two people can compute differently is not a metric. It is a recurring meeting.
+</div>
+
+<h3 class="rise">The averaging trap, measured</h3>
+<div class="rise">
+<p>
+  The mean of per-post engagement rates on this account is <strong>4.73%</strong>. The aggregate rate,
+  total engagement divided by total reach, is <strong>5.32%</strong>. Same posts, same month, an 11%
+  gap.
+</p>
+<p>
+  Worth stating plainly: the direction of that gap is not fixed. It is commonly assumed that averaging
+  inflates the headline, because small posts tend to show high percentage rates. Here it
+  <em>deflates</em>, because on this account the high-reach posts also engage well. Which way it breaks
+  depends on how reach and rate correlate in your data, and the only safe move is to stop averaging
+  rates at all rather than to memorise a rule of thumb.
+</p>
+</div>
+
+<h2 class="rise">What it found</h2>
+
+<figure class="rise">
+  <p class="fig-head">Half the account's reach depends on one recommendation algorithm, and that platform also engages best, so the dashboard reads it as a win.</p>
+  <svg viewBox="0 0 680 250" role="img" aria-label="Bar chart of share of total reach by platform. TikTok holds 48.4 percent, Instagram 30.9, X 11.7, LinkedIn 9.0. Engagement rate is labelled at the end of each bar.">
+    <text class="svg-lbl" x="0" y="16">Share of total reach</text>
+    <text class="svg-lbl" x="660" y="16" text-anchor="end">Engagement rate</text>
+
+    <text class="svg-lbl" x="0" y="46">TikTok</text>
+    <rect x="95" y="32" width="452" height="20" fill="var(--accent)" rx="4"></rect>
+    <text class="svg-val" x="557" y="47">48.4%</text>
+    <text class="svg-val" x="660" y="47" text-anchor="end" fill="var(--accent)">6.1%</text>
+
+    <text class="svg-lbl" x="0" y="88">Instagram</text>
+    <rect x="95" y="74" width="289" height="20" fill="var(--ink-soft)" rx="4"></rect>
+    <text class="svg-val" x="394" y="89">30.9%</text>
+    <text class="svg-val" x="660" y="89" text-anchor="end">5.3%</text>
+
+    <text class="svg-lbl" x="0" y="130">X</text>
+    <rect x="95" y="116" width="109" height="20" fill="var(--ink-soft)" rx="4"></rect>
+    <text class="svg-val" x="214" y="131">11.7%</text>
+    <text class="svg-val" x="660" y="131" text-anchor="end" fill="var(--dv-neg)">2.5%</text>
+
+    <text class="svg-lbl" x="0" y="172">LinkedIn</text>
+    <rect x="95" y="158" width="84" height="20" fill="var(--ink-soft)" rx="4"></rect>
+    <text class="svg-val" x="189" y="173">9.0%</text>
+    <text class="svg-val" x="660" y="173" text-anchor="end">4.8%</text>
+
+    <text class="svg-lbl" x="95" y="212" fill="var(--dv-neg)">Concentration risk, not a performance win. One algorithm change halves the account.</text>
+    <text class="svg-tick" x="95" y="234">X carries 715 posts, the most of any platform, for 11.7% of reach.</text>
+  </svg>
+  <figcaption>
+    Share of total reach by platform, 2,092 posts over one year. Engagement rate is the aggregate
+    reach-based rate. TikTok's 6.1% against X's 2.5% is the 2.4 times multiple that makes pooled format
+    rankings misleading.
+  </figcaption>
+</figure>
+
+<div class="rise">
+<p>
+  TikTok carries 48.4% of reach <em>and</em> the highest engagement rate. A performance dashboard
+  reports that as the account's strongest channel, which it is. The generated stakeholder narrative
+  flags it as a concentration risk instead, because both facts are true at once. Half the account's
+  reach sits behind a single recommendation algorithm that nobody in the room controls.
+</p>
+<p>
+  The opposite problem sits two rows down. X takes 715 posts, more than any other platform, and returns
+  11.7% of reach at the lowest engagement rate on the account. That is the clearest effort-against-return
+  finding in the set, and it is invisible on any chart that ranks platforms by a single metric.
+</p>
+</div>
+
+<figure class="rise">
+  <p class="fig-head">On Instagram, Reels earn 1.5 times the reach their calendar space costs. Stories earn a quarter of theirs.</p>
+  <svg viewBox="0 0 680 230" role="img" aria-label="Lollipop chart of Instagram format multipliers against a break-even line of one. Reels 1.50, Carousel 0.82, Static 0.47, Story 0.27.">
+    <line x1="460" y1="24" x2="460" y2="184" stroke="var(--dv-mute)" stroke-width="1.5"></line>
+    <text class="svg-tick" x="460" y="18" text-anchor="middle">1.0 break-even</text>
+    <g class="svg-tick" text-anchor="middle">
+      <text x="160" y="206">0</text><text x="310" y="206">0.5</text>
+      <text x="460" y="206">1.0</text><text x="610" y="206">1.5</text>
+    </g>
+
+    <text class="svg-lbl" x="150" y="44" text-anchor="end">Reel</text>
+    <line x1="460" y1="40" x2="610" y2="40" stroke="var(--accent)" stroke-width="2.5"></line>
+    <circle cx="610" cy="40" r="6" fill="var(--accent)"></circle>
+    <text class="svg-val" x="624" y="44" fill="var(--accent)">1.50</text>
+
+    <text class="svg-lbl" x="150" y="84" text-anchor="end">Carousel</text>
+    <line x1="406" y1="80" x2="460" y2="80" stroke="var(--ink-soft)" stroke-width="2.5"></line>
+    <circle cx="406" cy="80" r="6" fill="var(--ink-soft)"></circle>
+    <text class="svg-val" x="392" y="84" text-anchor="end">0.82</text>
+
+    <text class="svg-lbl" x="150" y="124" text-anchor="end">Static</text>
+    <line x1="301" y1="120" x2="460" y2="120" stroke="var(--dv-neg)" stroke-width="2.5"></line>
+    <circle cx="301" cy="120" r="6" fill="var(--dv-neg)"></circle>
+    <text class="svg-val" x="287" y="124" text-anchor="end" fill="var(--dv-neg)">0.47</text>
+
+    <text class="svg-lbl" x="150" y="164" text-anchor="end">Story</text>
+    <line x1="241" y1="160" x2="460" y2="160" stroke="var(--dv-neg)" stroke-width="2.5"></line>
+    <circle cx="241" cy="160" r="6" fill="var(--dv-neg)"></circle>
+    <text class="svg-val" x="227" y="164" text-anchor="end" fill="var(--dv-neg)">0.27</text>
+  </svg>
+  <figcaption>
+    Multiplier is share of platform reach divided by share of platform calendar, Instagram only, 561
+    posts. Above 1.0 a format earns more reach than the calendar space it takes. Reels are 42.6% of the
+    Instagram calendar and 63.7% of its reach. Stories are 6.8% of the calendar and 1.8% of reach.
+  </figcaption>
+</figure>
+
+<h2 class="rise">What I would report</h2>
+<div class="rise">
+<p>
+  One engagement rate on the front page, reach-based and aggregate, with the follower-based figure
+  available and labelled rather than hidden, so the second definition stops arriving as a surprise
+  mid-meeting.
+</p>
+<p>
+  Timing guidance moves to day-parts with a stated sample floor, and cells under the floor render blank
+  rather than ranked. LinkedIn's weekend column stays mostly empty because the brand barely posts
+  there, which is information, not a gap to fill with a guess.
+</p>
+<p>
+  The concrete recommendation on this account is a calendar reallocation, not a vibe. Move Story and
+  Static slots into Reels on Instagram, and audit whether 715 posts a year on X is defensible against
+  11.7% of reach. Follower charts stay on independent scales per platform, because X's slowing growth
+  is a real story that an Instagram-sized axis would hide entirely.
+</p>
+</div>
+
+<h2 class="rise">Limitations, and what I would do differently</h2>
+<div class="rise">
+<p>
+  Reach is a platform-reported number and platforms define it differently. Comparing reach across four
+  of them is directionally useful and precisely wrong, and no amount of careful arithmetic fixes that.
+  The format multiplier also treats calendar slots as interchangeable units of effort, which they are
+  not. A Reel costs considerably more to produce than a Static, so a 1.5 times reach return is not
+  automatically a 1.5 times return on effort.
+</p>
+<p>
+  The 20-post floor is a judgement I picked for stability, not a derived threshold. It should be set
+  from the variance in each account rather than copied across, and on a low-volume account it would
+  blank almost everything. At that point the honest output is "we cannot answer this yet" rather than a
+  lower floor.
+</p>
+<p>
+  Given more time I would add paid-against-organic splits throughout, since boosted posts distort every
+  reach-based rate on the page, and bring in a saves-and-shares-weighted quality measure. A save is
+  worth considerably more than a like, and a flat engagement count treats them alike.
+</p>
+</div>
+
+<div class="note rise">
+  <h4>Artefacts</h4>
+  <p>
+    <a href="https://github.com/Ysandhu10/social-media-data-dashboard">Source and tests on GitHub</a>,
+    <a href="../../method/">the metric dictionary and QA checklist</a>, and 28 tests passing on a clean
+    checkout.
+  </p>
+</div>
+
+</article>
+</div>
+
+<section class="band shell">
+  <div class="pair">
+    <a class="wcard rise" href="../share-of-voice/">
+      <div class="wcard-body">
+        <h3>Share of voice is lying to you</h3>
+        <p>22,319 mentions across six brands, and the two holding a tenth of the conversation and none of the goodwill.</p>
+          <div class="wcard-figs"><span><b>0.0%</b><i>quality share on 10% of volume</i></span><span><b>16.5x</b><i>crisis caught on day one</i></span></div>
+        <span class="go">Read the case study <span class="cap" aria-hidden="true">&rarr;</span></span>
+      </div>
+      <div class="wcard-art bezel"><div class="core">
+        <img src="../../assets/img/case-listening-card.webp" width="900" height="562" alt="Six translucent spheres floating in dark space, two glowing warm and the rest inert" loading="lazy" decoding="async">
+      </div></div>
+    </a>
+    <a class="wcard rise" href="../paid-social/">
+      <div class="wcard-body">
+        <h3>Three ways creative tests get called wrong</h3>
+        <p>$1.5M of delivery, four A/B tests, and why "not significant" and "no difference" are different findings.</p>
+          <div class="wcard-figs"><span><b>$1.5M</b><i>delivery tested</i></span><span><b>4</b><i>verdicts, not two</i></span></div>
+        <span class="go">Read the case study <span class="cap" aria-hidden="true">&rarr;</span></span>
+      </div>
+      <div class="wcard-art bezel"><div class="core">
+        <img src="../../assets/img/case-paid-card.webp" width="900" height="562" alt="Four thin horizontal bars of light at different depths, one shorter and dimmer" loading="lazy" decoding="async">
+      </div></div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <div class="foot-links">
+      <!-- LINKEDIN goes first in this list once the handle is confirmed:
+           <a href="https://www.linkedin.com/in/HANDLE">LinkedIn</a> -->
+      <span class="contact-row"><a id="footmail" href="mailto:yashi28sandhu@gmail.com">yashi28sandhu@gmail.com</a><button class="copy" data-copy="yashi28sandhu@gmail.com" data-target="footmail" type="button">Copy</button></span>
+      <a href="https://github.com/Ysandhu10">github.com/Ysandhu10</a>
+      <span style="color:var(--ink-faint)">San Francisco, CA</span>
+    </div>
+    <div class="foot-note">
+      <p>All analysis on this site uses synthetic or public data. No employer or client data appears anywhere.</p>
+      <p>&copy; 2026 Yashita Sandhu</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/reveal.js?v=2" defer></script>
+</body>
+</html>

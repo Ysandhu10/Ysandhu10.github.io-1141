@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Method</title>
+<meta name="description" content="How the numbers are made: the metric dictionary, the Boolean taxonomy architecture behind social listening, and the QA checklist every report passes before it goes out.">
+<meta name="author" content="Yashita Sandhu">
+<link rel="canonical" href="https://ysandhu10.github.io/Ysandhu10.github.io-1141/method/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Yashita Sandhu">
+<meta property="og:title" content="Method">
+<meta property="og:description" content="How the numbers are made: the metric dictionary, the Boolean taxonomy architecture behind social listening, and the QA checklist every report passes before it goes out.">
+<meta property="og:url" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/method/">
+<meta property="og:image" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/assets/og/method.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Method">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Method">
+<meta name="twitter:description" content="How the numbers are made: the metric dictionary, the Boolean taxonomy architecture behind social listening, and the QA checklist every report passes before it goes out.">
+<meta name="twitter:image" content="https://ysandhu10.github.io/Ysandhu10.github.io-1141/assets/og/method.png">
+
+<meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav-in">
+    <a href="../" class="nav-brand">Yashita Sandhu</a>
+    <div class="nav-links">
+      <a href="../#featured">Work</a>
+      <a href="../method/" aria-current="page">Method</a>
+      <a href="../about/">About</a>
+      <a href="../about/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero shell">
+  <div class="col">
+    <h1>How the numbers are made</h1>
+    <p class="sub" style="max-width:54ch">
+      Most disagreements about social performance are not disagreements about performance. They are two
+      people using the same word for different arithmetic.
+    </p>
+  </div>
+</header>
+
+<div class="shell">
+  <div class="bezel rise case-hero" style="margin-bottom:1rem">
+    <div class="core">
+      <img src="../assets/img/hero-signal.webp" width="1600" height="900"
+           alt="A single luminous curve emerging from a dense field of scattered points"
+           loading="lazy" decoding="async">
+    </div>
+  </div>
+</div>
+
+<div class="shell">
+<article class="prose">
+
+<h2 class="rise">Metric dictionary</h2>
+<p class="rise">
+  Each of these is defined once, in one place, and every figure on this site derives from that
+  definition. The point is not that these are the only correct choices. It is that the choice is
+  written down and does not drift between decks.
+</p>
+</article>
+</div>
+
+<div class="shell">
+<div class="chunks rise" style="margin:2.5rem 0">
+  <div class="chunk bezel"><div class="core">
+    <h4>Engagement</h4>
+    <dl>
+      <div><dt>Engagement rate, reach-based</dt>
+        <dd>Total engagements divided by total reach, aggregated across posts. The default.</dd></div>
+      <div><dt>Engagement rate, follower-based</dt>
+        <dd>Total engagements divided by follower count at period end. Roughly three times the
+        reach-based figure. Reported separately and labelled, never mixed.</dd></div>
+      <div><dt>Aggregate, not averaged</dt>
+        <dd>Sum the numerators, sum the denominators, then divide. Averaging per-post rates lets a
+        200-reach post count as much as a 200,000-reach one.</dd></div>
+    </dl>
+  </div></div>
+
+  <div class="chunk bezel"><div class="core">
+    <h4>Share of voice</h4>
+    <dl>
+      <div><dt>Volume share</dt>
+        <dd>Brand mentions divided by all mentions in the category. Familiar and sentiment-blind. Kept
+        because removing it starts an argument, but never shown alone.</dd></div>
+      <div><dt>Quality share</dt>
+        <dd>Volume weighted by net sentiment. The correction. The <em>gap</em> between this and volume
+        share is the reportable finding.</dd></div>
+      <div><dt>Crisis severity</dt>
+        <dd>Modified z-score against a trailing 28-day median, excluding the day under test. A
+        standard-deviation detector lets an incident inflate its own threshold and mask itself.</dd></div>
+    </dl>
+  </div></div>
+
+  <div class="chunk bezel"><div class="core">
+    <h4>Content and testing</h4>
+    <dl>
+      <div><dt>Format multiplier</dt>
+        <dd>Share of platform reach divided by share of platform calendar. Above 1.0 a format earns
+        more reach than the slots it takes. Computed within platform only.</dd></div>
+      <div><dt>Practical significance</dt>
+        <dd>A band agreed before a test runs. Separates "ruled a difference out" from "learned
+        nothing". Set per test against production cost.</dd></div>
+      <div><dt>Sample floor</dt>
+        <dd>Day-part cells below 20 posts render blank rather than ranked. A blank cell is information.</dd></div>
+    </dl>
+  </div></div>
+</div>
+</div>
+
+<div class="shell">
+<article class="prose">
+
+<h2 class="rise">Taxonomy architecture</h2>
+<div class="rise">
+<p>
+  Listening platforms give you two ways to find themes, and they are good at different jobs. Using one
+  for both is the most common way a listening programme becomes untrustworthy.
+</p>
+<p>
+  A <strong>curated Boolean taxonomy</strong> owns the recurring reported numbers. It runs on
+  everything, it is auditable, and it stays stable week to week. <strong>Unsupervised discovery</strong>
+  runs only on the residual the taxonomy could not place, and its output is next month's taxonomy
+  entries rather than this month's report.
+</p>
+<p>
+  A model re-fit each week silently renumbers and reshapes its own topics, so "price mentions doubled"
+  can mean the topic changed rather than the world did. For a figure in a recurring report, that is
+  disqualifying. Equally, running discovery across the whole corpus just rediscovers the themes the
+  rules already cover and buries the new signal underneath them.
+</p>
+<p>
+  <strong>Coverage, not accuracy, is the health metric.</strong> Taxonomy accuracy on placed mentions
+  is close to meaningless, because the rules were written against that vocabulary, so it measures
+  consistency. Coverage falling is the real signal. It means the conversation moved and the rules did
+  not.
+</p>
+</div>
+
+<h2 class="rise">QA checklist</h2>
+<p class="rise">Every recurring report passes this before it leaves my hands.</p>
+<ul class="rise">
+  <li><strong>Denominator stated.</strong> Every rate says what it is a rate <em>of</em>, in the label, not the footnote.</li>
+  <li><strong>Window stated.</strong> Date range and comparison basis on the chart, not in the email body.</li>
+  <li><strong>Sample size visible.</strong> Any cell or segment below the floor renders blank rather than ranked.</li>
+  <li><strong>No pooled format comparisons.</strong> Formats compared within platform, because platform effects dwarf format effects.</li>
+  <li><strong>Aggregate rates only.</strong> No mean-of-per-post-rates anywhere in the pipeline.</li>
+  <li><strong>Significance separated from importance.</strong> A result carries an interval and is read against the practical threshold.</li>
+  <li><strong>Nulls split in two.</strong> "Difference ruled out" and "test could not see" are reported as different findings.</li>
+  <li><strong>Every headline number recomputable.</strong> If I cannot regenerate it from committed code on request, it does not ship.</li>
+  <li><strong>Manual refreshes labelled as manual.</strong> Nothing is called live unless it is live.</li>
+</ul>
+
+<h2 class="rise">The code behind the case studies</h2>
+<p class="rise">
+  These are the working repositories, here for anyone who wants to check the arithmetic. The case
+  studies are written to stand on their own without them.
+</p>
+</article>
+</div>
+
+<div class="shell" style="padding-bottom:2rem">
+<div class="chunks rise">
+  <div class="repo bezel"><div class="core">
+    <h3>How I stop share of voice rewarding the brand having its worst week</h3>
+    <p>
+      Explainable lexicon sentiment, a taxonomy-first theme architecture with discovery over the
+      residual, quality-weighted share of voice, and a crisis detector whose baseline cannot be
+      contaminated by the event it is testing.
+    </p>
+    <div class="facts">
+      <span>22,319 mentions</span><span>6 brands</span><span>33 tests</span>
+      <span><a href="https://github.com/Ysandhu10/social-listening-engine">View source</a></span>
+    </div>
+  </div></div>
+
+  <div class="repo bezel"><div class="core">
+    <h3>How I tell "we ruled out a difference" apart from "the test learned nothing"</h3>
+    <p>
+      A/B evaluation with confidence intervals against a practical-significance threshold, peeking risk
+      measured on the actual data rather than described, Wilson intervals on small segments, and
+      creative fatigue fitted on log click-through against frequency.
+    </p>
+    <div class="facts">
+      <span>$1.5M spend</span><span>240 creatives</span><span>36 tests</span>
+      <span><a href="https://github.com/Ysandhu10/paid-social-campaign-analyzer">View source</a></span>
+    </div>
+  </div></div>
+
+  <div class="repo bezel"><div class="core">
+    <h3>How I define an engagement rate so a 200-reach post can't outvote a 200,000-reach one</h3>
+    <p>
+      Twelve KPIs defined once, aggregate rates throughout, day-part timing with a 20-post floor and
+      blanked thin cells, within-platform format comparison, and an auto-written stakeholder narrative.
+    </p>
+    <div class="facts">
+      <span>2,092 posts</span><span>4 platforms</span><span>28 tests</span>
+      <span><a href="https://github.com/Ysandhu10/social-media-data-dashboard">View source</a></span>
+    </div>
+  </div></div>
+</div>
+</div>
+
+<div class="shell">
+<div class="note warn rise" style="margin-top:2rem">
+  <h4>A note on the data in all three</h4>
+  <p>
+    All synthetic, seeded and reproducible. No employer or client data appears in any of them. Each
+    generator plants known events at known dates, which is what makes the pipelines testable against
+    ground truth rather than merely plausible.
+  </p>
+</div>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <div class="foot-links">
+      <!-- LINKEDIN goes first in this list once the handle is confirmed:
+           <a href="https://www.linkedin.com/in/HANDLE">LinkedIn</a> -->
+      <span class="contact-row"><a id="footmail" href="mailto:yashi28sandhu@gmail.com">yashi28sandhu@gmail.com</a><button class="copy" data-copy="yashi28sandhu@gmail.com" data-target="footmail" type="button">Copy</button></span>
+      <a href="https://github.com/Ysandhu10">github.com/Ysandhu10</a>
+      <span style="color:var(--ink-faint)">San Francisco, CA</span>
+    </div>
+    <div class="foot-note">
+      <p>All analysis on this site uses synthetic or public data. No employer or client data appears anywhere.</p>
+      <p>&copy; 2026 Yashita Sandhu</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/reveal.js?v=2" defer></script>
+</body>
+</html>
