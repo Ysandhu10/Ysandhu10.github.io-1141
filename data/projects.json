@@ -1,0 +1,125 @@
+{
+  "sectionTitle": "Featured Projects",
+  "projects": [
+    {
+      "title": "linkedin-analysis",
+      "description": "LinkedIn engagement and sentiment analysis — profile metrics, post-level engagement trends, and competitor comment benchmarking.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/linkedin-analysis",
+      "demo": "https://github.com/Ysandhu10/linkedin-analysis"
+    },
+    {
+      "title": "text-analysis-using-nlp-streamlit",
+      "description": "Interactive NLP text-analysis toolkit in Streamlit — sentiment scoring, named entity recognition, POS tagging, and word clouds.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/text-analysis-using-nlp-streamlit",
+      "demo": "https://github.com/Ysandhu10/text-analysis-using-nlp-streamlit"
+    },
+    {
+      "title": "stockastic",
+      "description": "ML-powered stock price forecasting in Streamlit — YFinance data, ARIMA time-series models, and interactive Plotly charts.",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/stockastic",
+      "demo": "https://github.com/Ysandhu10/stockastic"
+    },
+    {
+      "title": "customer-churn-prediction",
+      "description": "Telco customer churn: statistical testing of churn drivers plus a scikit-learn classification model and retention recommendations.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/customer-churn-prediction",
+      "demo": "https://github.com/Ysandhu10/customer-churn-prediction"
+    },
+    {
+      "title": "ds_salary_proj",
+      "description": "Data science salary estimator (MAE ~$11K) — Glassdoor scraping, feature engineering, Lasso/Random Forest tuning, and a Flask API.",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/ds_salary_proj",
+      "demo": "https://github.com/Ysandhu10/ds_salary_proj"
+    },
+    {
+      "title": "retail-margin-cockpit",
+      "description": "Governed margin and inventory source of truth for retail/DTC teams — dbt star schema, DAX measure library, and a row-level-security Power BI cockpit.",
+      "technologies": [
+        "Python",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/retail-margin-cockpit",
+      "demo": "https://github.com/Ysandhu10/retail-margin-cockpit"
+    },
+    {
+      "title": "paid-social-campaign-analyzer",
+      "description": "Paid social analytics with the statistics done properly — A/B tests with confidence intervals and practical-significance thresholds, peeking analysis, creative fatigue detection, and Wilson intervals on segments. Python + SciPy + Streamlit.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/paid-social-campaign-analyzer",
+      "demo": "https://github.com/Ysandhu10/paid-social-campaign-analyzer"
+    },
+    {
+      "title": "social-listening-engine",
+      "description": "Social listening across six competing brands — explainable sentiment, a taxonomy-first theme architecture with NMF discovery, share of voice, and robust crisis detection. Python + scikit-learn + Streamlit.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/social-listening-engine",
+      "demo": "https://github.com/Ysandhu10/social-listening-engine"
+    },
+    {
+      "title": "social-media-data-dashboard",
+      "description": "Post-level social analytics across Instagram, LinkedIn, TikTok and X — 12 KPIs, day-part timing analysis, and an automated stakeholder report. Streamlit + pandas.",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/social-media-data-dashboard",
+      "demo": "https://github.com/Ysandhu10/social-media-data-dashboard"
+    },
+    {
+      "title": "yolo-1786989151595",
+      "description": "⚡ YOLO: Merge without review for achievement",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/yolo-1786989151595",
+      "demo": "https://github.com/Ysandhu10/yolo-1786989151595"
+    },
+    {
+      "title": "sales-insights-data-analysis-using-tableau-and-sql",
+      "description": "Sales insights for a hardware company — SQL ETL into a star schema, with Tableau dashboards for revenue and profit analysis.",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "image": "",
+      "github": "https://github.com/Ysandhu10/sales-insights-data-analysis-using-tableau-and-sql",
+      "demo": "https://github.com/Ysandhu10/sales-insights-data-analysis-using-tableau-and-sql"
+    }
+  ]
+}

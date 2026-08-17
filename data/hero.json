@@ -1,0 +1,44 @@
+{
+  "greeting": "Hi, I'm",
+  "name": "YASHITA SANDHU",
+  "title": "Social Media Analyst",
+  "summary": "Social Media Analyst with 4+ years of experience driving social media analytics, content performance, audience engagement, and campaign insights across Meta, Instagram, X, and LinkedIn.",
+  "avatarUrl": "/avatar.png",
+  "highlights": [
+    {
+      "icon": "fas fa-briefcase",
+      "text": "Professional Experience"
+    },
+    {
+      "icon": "fas fa-code",
+      "text": "Technical Expertise"
+    },
+    {
+      "icon": "fas fa-users",
+      "text": "Team Collaboration"
+    }
+  ],
+  "cta": {
+    "buttons": [
+      {
+        "text": "Get In Touch",
+        "href": "#contact",
+        "type": "primary",
+        "external": false
+      },
+      {
+        "text": "View My Work",
+        "href": "#projects",
+        "type": "secondary",
+        "external": false
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "Email",
+      "url": "mailto:yashi28sandhu@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}
